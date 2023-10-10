@@ -4,14 +4,15 @@ cd /opt
 dpkg --add-architecture i386
 apt update -y
 apt upgrade -y
+apt autoremove -y && apt autoclean
 
 wget https://github.com/projectdiscovery/nuclei/releases/download/v2.9.15/nuclei_2.9.15_linux_arm64.zip
 unzip nuclei_2.9.15_linux_arm64.zip
 rm nuclei_2.9.15_linux_arm64.zip
 mkdir nuclei_dir
-mv nuclei nuclei/
+mv nuclei nuclei_dir/
 
-wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
+curl -O https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
 tar xzf Python-3.9.0.tgz
 rm Python-3.9.0.tgz
 cd Python-3.9.0.tgz
@@ -19,7 +20,7 @@ cd Python-3.9.0.tgz
 make altinstall
 cd ..
 
-wget https://www.python.org/ftp/python/2.7/Python-2.7.tgz
+curl -O https://www.python.org/ftp/python/2.7/Python-2.7.tgz
 tar xzf Python-2.7.tgz
 rm Python-2.7.tgz
 cd Python-2.7
