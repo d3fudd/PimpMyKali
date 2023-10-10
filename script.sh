@@ -1,3 +1,5 @@
+setxkbmap -model abnt2 -layout br -variant abnt2
+
 cd /opt
 dpkg --add-architecture i386
 apt update -y
@@ -5,8 +7,9 @@ apt upgrade -y
 
 wget https://github.com/projectdiscovery/nuclei/releases/download/v2.9.15/nuclei_2.9.15_linux_arm64.zip
 unzip nuclei_2.9.15_linux_arm64.zip
-mv nuclei_2.9.15_linux_arm64 nuclei
 rm nuclei_2.9.15_linux_arm64.zip
+mkdir nuclei_dir
+mv nuclei nuclei/
 
 wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
 tar xzf Python-3.9.0.tgz
@@ -33,5 +36,5 @@ apt install libwine wine wine32 winetricks redis-tools figlet toilet fcrackzip f
 
 echo ' ' >> ~/.bashrc
 echo '# Meus PATHS personalizados' >> ~/.bashrc
-echo 'export PATH="$PATH:/opt/nuclei/"' >> ~/.bashrc
+echo 'export PATH="$PATH:/opt/nuclei_dir/"' >> ~/.bashrc
 echo 'export PATH="$PATH:/opt/dirsearch/"' >> ~/.bashrc
