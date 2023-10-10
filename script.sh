@@ -10,7 +10,7 @@ wget https://github.com/projectdiscovery/nuclei/releases/download/v2.9.15/nuclei
 unzip nuclei_2.9.15_linux_arm64.zip
 rm nuclei_2.9.15_linux_arm64.zip
 mkdir nuclei_dir
-mv nuclei nuclei_dir/
+mv nuclei nuclei_dir
 
 curl -O https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
 tar xzf Python-3.9.0.tgz
@@ -39,3 +39,10 @@ echo ' ' >> ~/.bashrc
 echo '# Meus PATHS personalizados' >> ~/.bashrc
 echo 'export PATH="$PATH:/opt/nuclei_dir/"' >> ~/.bashrc
 echo 'export PATH="$PATH:/opt/dirsearch/"' >> ~/.bashrc
+
+echo ' ' >> /home/kali/.bashrc
+echo '# Meus PATHS personalizados' >> /home/kali/.bashrc
+echo 'export PATH="$PATH:/opt/nuclei_dir/"' >> /home/kali/.bashrc
+echo 'export PATH="$PATH:/opt/dirsearch/"' >> /home/kali/.bashrc
+
+cd /home/kali
