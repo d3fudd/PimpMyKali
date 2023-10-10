@@ -9,11 +9,10 @@ apt autoremove -y && apt autoclean
 curl -O https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
 tar xzf Python-3.9.0.tgz
 rm Python-3.9.0.tgz
-cd Python-3.9.0.tgz
+cd Python-3.9.0
 ./configure --enable-optimizations
 make altinstall
 cd ..
-rm -rf Python-3.9.0
 
 curl -O https://www.python.org/ftp/python/2.7/Python-2.7.tgz
 tar xzf Python-2.7.tgz
