@@ -30,6 +30,9 @@ wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1
 dpkg -i rustscan_2.0.1_amd64.deb
 rm rustscan_2.0.1_amd64.deb
 
+sudo apt install libssl-dev python3-venv
+pip install pwntools
+
 apt remove --purge openvpn
 wget http://sft.if.usp.br/debian/pool/main/o/openvpn/openvpn_2.5.1-3_amd64.deb
 wget http://ftp.de.debian.org/debian/pool/main/o/openssl/libssl1.1_1.1.1w-0+deb11u1_amd64.deb
