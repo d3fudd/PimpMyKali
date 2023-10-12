@@ -32,6 +32,10 @@ rm rustscan_2.0.1_amd64.deb
 
 sudo apt install libssl-dev python3-venv
 pip install pwntools
+gunzip /usr/share/wordlists/rockyou.txt.gz
+iconv -f ISO-8859-1 -t UTF-8 /usr/share/wordlists/rockyou.txt > /usr/share/wordlists/rockyou_utf8.txt
+rm /usr/share/wordlists/rockyou.txt
+mv /usr/share/wordlists/rockyou_utf8.txt /usr/share/wordlists/rockyou.txt
 
 apt remove --purge openvpn
 wget http://sft.if.usp.br/debian/pool/main/o/openvpn/openvpn_2.5.1-3_amd64.deb
