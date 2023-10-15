@@ -40,8 +40,8 @@ rm /usr/share/wordlists/rockyou.txt
 mv /usr/share/wordlists/rockyou_utf8.txt /usr/share/wordlists/rockyou.txt
 
 apt remove --purge openvpn
-wget http://sft.if.usp.br/debian/pool/main/o/openvpn/openvpn_2.5.1-3_amd64.deb
-wget http://ftp.de.debian.org/debian/pool/main/o/openssl/libssl1.1_1.1.1w-0+deb11u1_amd64.deb
+wget https://github.com/d3fudd/Pimp_my_Kali/raw/main/openvpn_2.5.1-3_amd64.deb
+wget https://github.com/d3fudd/Pimp_my_Kali/raw/main/libssl1.1_1.1.1w-0+deb11u1_amd64.deb
 dpkg -i libssl1.1_1.1.1w-0+deb11u1_amd64.deb
 dpkg -i openvpn_2.5.1-3_amd64.deb
 apt-mark hold openvpn
