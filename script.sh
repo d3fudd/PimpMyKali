@@ -2,9 +2,9 @@ setxkbmap -model abnt2 -layout br -variant abnt2
 
 cd /opt
 dpkg --add-architecture i386
-apt update -y
-apt upgrade -y
-apt autoremove -y && apt autoclean
+apt update
+#apt upgrade -y
+#apt autoremove -y && apt autoclean
 
 curl -O https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
 tar xzf Python-3.9.0.tgz
