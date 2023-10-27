@@ -176,6 +176,10 @@ echo ' [*] Instalando python3-venv'
 echo ' '
 apt install python3-venv
 echo ' '
+echo ' [*] Instalando sqlplus'
+echo ' '
+apt install oracle-instantclient-sqlplus
+echo ' '
 echo ' [*] Instalando pwntools'
 echo ' '
 pip install pwntools
