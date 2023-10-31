@@ -16,6 +16,18 @@ dpkg --add-architecture i386
 apt update
 
 echo ' '
+echo ' [*] Instalando Python 3.10.0'
+echo ' '
+curl -O https://www.python.org/ftp/python/3.10.0/Python-3.10.0.tgz
+tar xzf Python-3.10.0.tgz
+rm Python-3.10.0.tgz
+cd Python-3.10.0
+./configure --enable-optimizations
+make altinstall
+cd ..
+rm -rf Python-3.10.0/
+
+echo ' '
 echo ' [*] Instalando Python 3.9.0'
 echo ' '
 curl -O https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz
@@ -26,6 +38,18 @@ cd Python-3.9.0
 make altinstall
 cd ..
 rm -rf Python-3.9.0/
+
+echo ' '
+echo ' [*] Instalando Python 2.8.0'
+echo ' '
+curl -O https://www.python.org/ftp/python/2.8/Python-2.8.tgz
+tar xzf Python-2.8.tgz
+rm Python-2.8.tgz
+cd Python-2.8
+./configure --enable-optimizations
+make altinstall
+cd ..
+rm -rf Python-2.8/
 
 echo ' '
 echo ' [*] Instalando Python 2.7.0'
@@ -170,15 +194,15 @@ apt install lynx -y
 echo ' '
 echo ' [*] Instalando libssl-dev'
 echo ' '
-apt install libssl-dev
+apt install libssl-dev -y
 echo ' '
 echo ' [*] Instalando python3-venv'
 echo ' '
-apt install python3-venv
+apt install python3-venv -y
 echo ' '
 echo ' [*] Instalando sqlplus'
 echo ' '
-apt install oracle-instantclient-sqlplus
+apt install oracle-instantclient-sqlplus -y
 echo ' '
 echo ' [*] Instalando pwntools'
 echo ' '
