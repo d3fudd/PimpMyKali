@@ -204,6 +204,10 @@ echo ' [*] Instalando sqlplus'
 echo ' '
 apt install oracle-instantclient-sqlplus -y
 echo ' '
+echo ' [*] Instalando systemd-resolved'
+echo ' '
+apt install systemd-resolved openvpn-systemd-resolved -y
+echo ' '
 echo ' [*] Instalando pwntools'
 echo ' '
 pip install pwntools
