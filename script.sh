@@ -235,6 +235,13 @@ echo ' '
 cat /usr/share/wordlists/dirb/big.txt /usr/share/wordlists/dirb/common.txt /usr/share/wordlists/dirb/small.txt | tr '\r' '\n' | sort -u > /usr/share/wordlists/dirb/best.txt
 
 echo ' '
+echo ' [*] Instalando pip2'
+echo ' '
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+python2 get-pip.py
+rm get-pip.py
+
+echo ' '
 echo ' [*] Fazendo downgrade do OpenVPN para a versao 2.5.1-3'
 echo ' '
 apt remove --purge openvpn
