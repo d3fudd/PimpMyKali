@@ -230,6 +230,11 @@ rm /usr/share/wordlists/rockyou.txt
 mv /usr/share/wordlists/rockyou_utf8.txt /usr/share/wordlists/rockyou.txt
 
 echo ' '
+echo ' [*] Criando wordlist best.txt em /usr/share/wordlists/dirb/'
+echo ' '
+cat /usr/share/wordlists/dirb/big.txt /usr/share/wordlists/dirb/common.txt /usr/share/wordlists/dirb/small.txt | tr '\r' '\n' | sort -u > /usr/share/wordlists/dirb/best.txt
+
+echo ' '
 echo ' [*] Fazendo downgrade do OpenVPN para a versao 2.5.1-3'
 echo ' '
 apt remove --purge openvpn
