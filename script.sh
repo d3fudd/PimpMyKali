@@ -233,7 +233,7 @@ echo ' '
 echo ' [*] Criando wordlist best.txt em /usr/share/wordlists/dirb/'
 echo ' '
 curl https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt > dicc.txt
-cat dicc.txt /usr/share/wordlists/dirb/big.txt /usr/share/wordlists/dirb/common.txt /usr/share/wordlists/dirb/small.txt | tr '\r' '\n' | sort -u > /usr/share/wordlists/dirb/best.txt
+cat dicc.txt /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt /usr/share/wordlists/dirb/big.txt /usr/share/wordlists/dirb/common.txt /usr/share/wordlists/dirb/small.txt | tr '\r' '\n' | sort -u > /usr/share/wordlists/dirb/best.txt
 rm dicc.txt
 
 echo ' '
