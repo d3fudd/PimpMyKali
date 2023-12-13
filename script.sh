@@ -50,6 +50,9 @@ cd Python-2.8
 make altinstall
 cd ..
 rm -rf Python-2.8/
+curl https://bootstrap.pypa.io/pip/2.8/get-pip.py -o get-pip.py
+python2.8 get-pip.py
+rm get-pip.py
 
 echo ' '
 echo ' [*] Instalando Python 2.7.0'
@@ -62,6 +65,9 @@ cd Python-2.7
 make altinstall
 cd ..
 rm -rf Python-2.7/
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+python2.7 get-pip.py
+rm get-pip.py
 
 echo ' '
 echo ' [*] Instalando slapd'
