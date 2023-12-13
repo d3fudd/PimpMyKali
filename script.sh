@@ -50,9 +50,6 @@ cd Python-2.8
 make altinstall
 cd ..
 rm -rf Python-2.8/
-curl https://bootstrap.pypa.io/pip/2.8/get-pip.py -o get-pip.py
-python2.8 get-pip.py
-rm get-pip.py
 
 echo ' '
 echo ' [*] Instalando Python 2.7.0'
@@ -65,9 +62,6 @@ cd Python-2.7
 make altinstall
 cd ..
 rm -rf Python-2.7/
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
-python2.7 get-pip.py
-rm get-pip.py
 
 echo ' '
 echo ' [*] Instalando slapd'
@@ -243,10 +237,10 @@ cat dicc.txt /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt /usr/s
 rm dicc.txt
 
 echo ' '
-echo ' [*] Instalando pip2'
+echo ' [*] Instalando pip2.7'
 echo ' '
-wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
-python2 get-pip.py
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+python2.7 get-pip.py
 rm get-pip.py
 
 echo ' '
