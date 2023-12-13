@@ -244,6 +244,11 @@ python2.7 get-pip.py
 rm get-pip.py
 
 echo ' '
+echo ' [*] Instalando python2-dev'
+echo ' '
+apt install python2-dev
+
+echo ' '
 echo ' [*] Instalando setuptools para o python2.7'
 echo ' '
 pip2.7 install setuptools
