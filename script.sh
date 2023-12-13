@@ -244,6 +244,11 @@ python2.7 get-pip.py
 rm get-pip.py
 
 echo ' '
+echo ' [*] Instalando setuptools para o python2.7'
+echo ' '
+pip2.7 install setuptools
+
+echo ' '
 echo ' [*] Fazendo downgrade do OpenVPN para a versao 2.5.1-3'
 echo ' '
 apt remove --purge openvpn
