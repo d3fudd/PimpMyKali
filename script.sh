@@ -213,6 +213,10 @@ echo ' '
 apt install bloodhound.py -y
 apt install bloodhound -y
 echo ' '
+echo ' [*] Instalando CrackMapExec'
+echo ' '
+apt install cme -y
+echo ' '
 echo ' [*] Instalando systemd-resolved'
 echo ' '
 apt install systemd-resolved openvpn-systemd-resolved -y
