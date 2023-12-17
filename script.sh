@@ -204,6 +204,10 @@ echo ' [*] Instalando sqlplus'
 echo ' '
 apt install oracle-instantclient-sqlplus -y
 echo ' '
+echo ' [*] Instalando libreoffice'
+echo ' '
+apt install libreoffice -y
+echo ' '
 echo ' [*] Instalando systemd-resolved'
 echo ' '
 apt install systemd-resolved openvpn-systemd-resolved -y
