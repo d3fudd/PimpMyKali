@@ -210,7 +210,8 @@ apt install libreoffice -y
 echo ' '
 echo ' [*] Instalando bloodhound'
 echo ' '
-apt install bloodhound.py
+apt install bloodhound.py -y
+apt install bloodhound -y
 echo ' '
 echo ' [*] Instalando systemd-resolved'
 echo ' '
