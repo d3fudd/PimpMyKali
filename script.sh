@@ -208,6 +208,10 @@ echo ' [*] Instalando libreoffice'
 echo ' '
 apt install libreoffice -y
 echo ' '
+echo ' [*] Instalando bloodhound'
+echo ' '
+apt install bloodhound.py
+echo ' '
 echo ' [*] Instalando systemd-resolved'
 echo ' '
 apt install systemd-resolved openvpn-systemd-resolved -y
