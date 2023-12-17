@@ -251,7 +251,12 @@ apt install python2-dev
 echo ' '
 echo ' [*] Instalando setuptools para o python2.7'
 echo ' '
-pip2.7 install setuptools
+pip2.7 install setuptools==44.1.1
+
+echo ' '
+echo ' [*] Instalando impacket para o python2.7'
+echo ' '
+pip2.7 install impacket==0.10.0
 
 echo ' '
 echo ' [*] Fazendo downgrade do OpenVPN para a versao 2.5.1-3'
