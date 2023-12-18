@@ -67,159 +67,198 @@ echo ' '
 echo ' [*] Instalando slapd'
 echo ' '
 apt install slapd -y
+
 echo ' '
 echo ' [*] Instalando ldap-utils'
 echo ' '
 apt install ldap-utils -y
+
 echo ' '
 echo ' [*] Instalando gobuster'
 echo ' '
 apt install gobuster -y
+
 echo ' '
 echo ' [*] Instalando terminator'
 echo ' '
 apt install terminator -y
+
 echo ' '
 echo ' [*] Instalando rlwrap'
 echo ' '
 apt install rlwrap -y
+
 echo ' '
 echo ' [*] Instalando libwine'
 echo ' '
 apt install libwine -y
+
 echo ' '
 echo ' [*] Instalando wine'
 echo ' '
 apt install wine -y
+
 echo ' '
 echo ' [*] Instalando wine32'
 echo ' '
 apt install wine32 -y
+
 echo ' '
 echo ' [*] Instalando winetricks'
 echo ' '
 apt install winetricks -y
+
 echo ' '
 echo ' [*] Instalando kali-wallpapers-legacy'
 echo ' '
 apt install kali-wallpapers-legacy -y
+
 echo ' '
 echo ' [*] Instalando nuclei'
 echo ' '
 apt install nuclei -y
+
 echo ' '
 echo ' [*] Instalando dirsearch'
 echo ' '
 apt install dirsearch -y
+
 echo ' '
 echo ' [*] Instalando redis-tools'
 echo ' '
 apt install redis-tools -y
+
 echo ' '
 echo ' [*] Instalando figlet'
 echo ' '
 apt install figlet -y
+
 echo ' '
 echo ' [*] Instalando toilet'
 echo ' '
 apt install toilet -y
+
 echo ' '
 echo ' [*] Instalando fcrackzip'
 echo ' '
 apt install fcrackzip -y
+
 echo ' '
 echo ' [*] Instalando freerdp2-x11'
 echo ' '
 apt install freerdp2-x11 -y
+
 echo ' '
 echo ' [*] Instalando bettercap'
 echo ' '
 apt install bettercap* -y
+
 echo ' '
 echo ' [*] Instalando jd-gui'
 echo ' '
 apt install jd-gui -y
+
 echo ' '
 echo ' [*] Instalando apktool'
 echo ' '
 apt install apktool -y
+
 echo ' '
 echo ' [*] Instalando smali'
 echo ' '
 apt install smali -y
+
 echo ' '
 echo ' [*] Instalando dex2jar'
 echo ' '
 apt install dex2jar -y
+
 echo ' '
 echo ' [*] Instalando jadx'
 echo ' '
 apt install jadx -y
+
 echo ' '
 echo ' [*] Instalando dsniff'
 echo ' '
 apt install dsniff -y
+
 echo ' '
 echo ' [*] Instalando libc6-dev:i386'
 echo ' '
 apt install libc6-dev:i386 -y
+
 echo ' '
 echo ' [*] Instalando libssl-dev:i386'
 echo ' '
 apt install libssl-dev:i386 -y
+
 echo ' '
 echo ' [*] Instalando seclists'
 echo ' '
 apt install seclists -y
+
 echo ' '
 echo ' [*] Instalando isc-dhcp-server'
 echo ' '
 apt install isc-dhcp-server -y
+
 echo ' '
 echo ' [*] Instalando proxychains'
 echo ' '
 apt install proxychains -y
+
 echo ' '
 echo ' [*] Instalando tor'
 echo ' '
 apt install tor -y
+
 echo ' '
 echo ' [*] Instalando mingw-w64'
 echo ' '
 apt install mingw-w64 -y
+
 echo ' '
 echo ' [*] Instalando lynx'
 echo ' '
 apt install lynx -y
+
 echo ' '
 echo ' [*] Instalando libssl-dev'
 echo ' '
 apt install libssl-dev -y
+
 echo ' '
 echo ' [*] Instalando python3-venv'
 echo ' '
 apt install python3-venv -y
+
 echo ' '
 echo ' [*] Instalando sqlplus'
 echo ' '
 apt install oracle-instantclient-sqlplus -y
+
 echo ' '
 echo ' [*] Instalando libreoffice'
 echo ' '
 apt install libreoffice -y
+
 echo ' '
 echo ' [*] Instalando bloodhound'
 echo ' '
 apt install bloodhound.py -y
 apt install bloodhound -y
+
 echo ' '
 echo ' [*] Instalando CrackMapExec'
 echo ' '
-apt install cme -y
+apt install crackmapexec -y
+
 echo ' '
 echo ' [*] Instalando systemd-resolved'
 echo ' '
 apt install systemd-resolved openvpn-systemd-resolved -y
+
 echo ' '
 echo ' [*] Instalando pwntools'
 echo ' '
@@ -250,13 +289,6 @@ cat dicc.txt /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt /usr/s
 rm dicc.txt
 
 echo ' '
-echo ' [*] Instalando pip2.7'
-echo ' '
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
-python2.7 get-pip.py
-rm get-pip.py
-
-echo ' '
 echo ' [*] Instalando python2-dev'
 echo ' '
 apt install python2-dev
@@ -265,6 +297,13 @@ echo ' '
 echo ' [*] Instalando setuptools para o python2.7'
 echo ' '
 pip2.7 install setuptools==44.1.1
+
+echo ' '
+echo ' [*] Instalando pip2.7'
+echo ' '
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+python2.7 get-pip.py
+rm get-pip.py
 
 echo ' '
 echo ' [*] Instalando impacket para o python2.7'
