@@ -289,6 +289,11 @@ apt install libkrb5-dev
 pip3 install kerberos
 pip2 install kerberos
 
+echo ' '
+echo ' [*] Instalando paramiko eno python 2.7'
+echo ' '
+pip2.7 install paramiko
+
 apt autoremove -y && apt autoclean
 
 echo ' '
