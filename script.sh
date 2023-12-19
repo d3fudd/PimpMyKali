@@ -264,6 +264,13 @@ echo ' [*] Instalando pwntools'
 echo ' '
 pip install pwntools
 
+echo ' '
+echo ' [*] Instalando kerberos'
+echo ' '
+apt install krb5-config
+apt install libkrb5-dev
+pip3 install kerberos
+
 apt autoremove -y && apt autoclean
 
 echo ' '
