@@ -64,6 +64,23 @@ cd ..
 rm -rf Python-2.7/
 
 echo ' '
+echo ' [*] Instalando python2-dev'
+echo ' '
+apt install python2-dev
+
+echo ' '
+echo ' [*] Instalando setuptools para o python2.7'
+echo ' '
+pip2.7 install setuptools==44.1.1
+
+echo ' '
+echo ' [*] Instalando pip2.7'
+echo ' '
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
+python2.7 get-pip.py
+rm get-pip.py
+
+echo ' '
 echo ' [*] Instalando slapd'
 echo ' '
 apt install slapd -y
@@ -294,23 +311,6 @@ echo ' '
 curl https://raw.githubusercontent.com/maurosoria/dirsearch/master/db/dicc.txt > dicc.txt
 cat dicc.txt /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt /usr/share/wordlists/dirb/big.txt /usr/share/wordlists/dirb/common.txt /usr/share/wordlists/dirb/small.txt | tr '\r' '\n' | sort -u > /usr/share/wordlists/dirb/best.txt
 rm dicc.txt
-
-echo ' '
-echo ' [*] Instalando python2-dev'
-echo ' '
-apt install python2-dev
-
-echo ' '
-echo ' [*] Instalando setuptools para o python2.7'
-echo ' '
-pip2.7 install setuptools==44.1.1
-
-echo ' '
-echo ' [*] Instalando pip2.7'
-echo ' '
-curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
-python2.7 get-pip.py
-rm get-pip.py
 
 echo ' '
 echo ' [*] Instalando impacket para o python2.7'
