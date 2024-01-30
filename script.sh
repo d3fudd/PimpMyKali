@@ -323,6 +323,11 @@ echo ' '
 pip2.7 install impacket==0.10.0
 
 echo ' '
+echo ' [*] Instalando pwntools para o python2.7'
+echo ' '
+pip2 install pwntools
+
+echo ' '
 echo ' [*] Fazendo downgrade do OpenVPN para a versao 2.5.1-3'
 echo ' '
 apt remove --purge openvpn
