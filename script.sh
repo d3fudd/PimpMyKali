@@ -312,10 +312,12 @@ rm /usr/share/wordlists/rockyou.txt
 mv /usr/share/wordlists/rockyou_utf8.txt /usr/share/wordlists/rockyou.txt
 
 echo ' '
-echo ' [*] Criando wordlist best.txt em /usr/share/wordlists/dirb/'
+echo ' [*] Criando wordlist best_common.txt e best_big.txt em /usr/share/wordlists/dirb/'
 echo ' '
-wget https://github.com/d3fudd/Wordlists/releases/download/release/best.txt
-mv best.txt /usr/share/wordlists/dirb/best.txt
+wget https://github.com/d3fudd/Wordlists/releases/download/release/best_common.txt
+wget https://github.com/d3fudd/Wordlists/releases/download/release/best_big.txt
+mv best_common.txt /usr/share/wordlists/dirb/best_common.txt
+mv best_big.txt /usr/share/wordlists/dirb/best_big.txt
 
 echo ' '
 echo ' [*] Instalando impacket para o python2.7'
