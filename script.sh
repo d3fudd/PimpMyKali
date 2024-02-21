@@ -15,6 +15,7 @@ echo ' '
 dpkg --add-architecture i386
 apt update
 
+cd /opt
 echo ' '
 echo ' [*] Instalando Python 3.10.0'
 echo ' '
@@ -27,6 +28,7 @@ make altinstall
 cd ..
 rm -rf Python-3.10.0/
 
+cd /opt
 echo ' '
 echo ' [*] Instalando Python 3.9.0'
 echo ' '
@@ -39,6 +41,7 @@ make altinstall
 cd ..
 rm -rf Python-3.9.0/
 
+cd /opt
 echo ' '
 echo ' [*] Instalando Python 2.8.0'
 echo ' '
@@ -51,6 +54,7 @@ make altinstall
 cd ..
 rm -rf Python-2.8/
 
+cd /opt
 echo ' '
 echo ' [*] Instalando Python 2.7.0'
 echo ' '
@@ -63,6 +67,7 @@ make altinstall
 cd ..
 rm -rf Python-2.7/
 
+cd /opt
 echo ' '
 echo ' [*] Instalando python2-dev'
 echo ' '
@@ -73,6 +78,7 @@ echo ' [*] Instalando setuptools para o python2.7'
 echo ' '
 pip2.7 install setuptools==44.1.1
 
+cd /opt
 echo ' '
 echo ' [*] Instalando pip2.7'
 echo ' '
