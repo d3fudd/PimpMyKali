@@ -294,7 +294,8 @@ apt install systemd-resolved openvpn-systemd-resolved -y
 echo ' '
 echo ' [*] Instalando pwntools'
 echo ' '
-pip install pwntools
+apt install python3-pwntools
+pip2.7 install pwntools
 
 echo ' '
 echo ' [*] Instalando kerberos'
@@ -305,7 +306,7 @@ pip3 install kerberos
 pip2 install kerberos
 
 echo ' '
-echo ' [*] Instalando paramiko eno python 2.7'
+echo ' [*] Instalando paramiko no python 2.7'
 echo ' '
 pip2.7 install paramiko
 
@@ -314,9 +315,10 @@ apt autoremove -y && apt autoclean
 echo ' '
 echo ' [*] Instalando Rustscan'
 echo ' '
-wget https://github.com/RustScan/RustScan/releases/download/2.0.1/rustscan_2.0.1_amd64.deb
-dpkg -i rustscan_2.0.1_amd64.deb
-rm rustscan_2.0.1_amd64.deb
+wget https://github.com/RustScan/RustScan/releases/download/2.3.0/rustscan-2.3.0-x86_64-linux.zip;
+unzip rustscan-2.3.0-x86_64-linux.zip;
+mv tmp/rustscan-2.3.0-x86_64-linux/rustscan /usr/bin ;
+rm -rf rustscan-2.3.0-x86_64-linux.zip tmp ;
 
 echo ' '
 echo ' [*] Descompactando rockyou.txt e convertendo em UTF-8'
@@ -329,20 +331,10 @@ mv /usr/share/wordlists/rockyou_utf8.txt /usr/share/wordlists/rockyou.txt
 echo ' '
 echo ' [*] Criando wordlist best_common.txt e best_big.txt em /usr/share/wordlists/dirb/'
 echo ' '
-wget https://github.com/d3fudd/Wordlists/releases/download/release/best_common.txt
-wget https://github.com/d3fudd/Wordlists/releases/download/release/best_big.txt
-mv best_common.txt /usr/share/wordlists/dirb/best_common.txt
-mv best_big.txt /usr/share/wordlists/dirb/best_big.txt
-
-echo ' '
-echo ' [*] Instalando impacket para o python2.7'
-echo ' '
-pip2.7 install impacket==0.10.0
-
-echo ' '
-echo ' [*] Instalando pwntools para o python2.7'
-echo ' '
-pip2 install pwntools
+wget https://github.com/d3fudd/Wordlists/releases/download/release/best_common.txt;
+wget https://github.com/d3fudd/Wordlists/releases/download/release/best_big.txt;
+mv best_common.txt /usr/share/wordlists/dirb/best_common.txt;
+mv best_big.txt /usr/share/wordlists/dirb/best_big.txt;
 
 echo ' '
 echo ' [*] Baixando sysinternals da Microsoft'
