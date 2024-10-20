@@ -54,6 +54,11 @@ make altinstall
 cd ..
 rm -rf Python-2.8/
 
+echo ' '
+echo ' [*] Instalando libssl-dev e build-essential'
+echo ' '
+apt install libssl-dev build-essential libbz2-dev libssl-dev libreadline-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libffi-dev zlib1g-dev libncurses5-dev libncursesw5-dev -y
+
 cd /opt
 echo ' '
 echo ' [*] Instalando Python 2.7.0'
@@ -64,6 +69,9 @@ rm Python-2.7.tgz
 cd Python-2.7
 ./configure --enable-optimizations
 make altinstall
+./configure --with-ssl
+make
+make install
 cd ..
 rm -rf Python-2.7/
 
@@ -71,20 +79,21 @@ cd /opt
 echo ' '
 echo ' [*] Instalando python2-dev'
 echo ' '
-apt install python2-dev
-
-echo ' '
-echo ' [*] Instalando setuptools para o python2.7'
-echo ' '
-pip2.7 install setuptools==44.1.1
+apt install python2-dev -y
 
 cd /opt
 echo ' '
 echo ' [*] Instalando pip2.7'
 echo ' '
+apt install zlib1g-dev -y
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py -o get-pip.py
-python2.7 get-pip.py
+python2 get-pip.py
 rm get-pip.py
+
+echo ' '
+echo ' [*] Instalando setuptools para o python2.7'
+echo ' '
+pip2.7 install setuptools==44.1.1
 
 echo ' '
 echo ' [*] Instalando slapd'
